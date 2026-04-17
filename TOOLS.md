@@ -50,6 +50,10 @@ Add whatever helps you do your job. This is your cheat sheet.
 - Telegram bot/account: TanqueBot (@lacajaambarBot)
 - Preferred Telegram target/chat id for luis: 1356520901
 
+### TTS
+
+- Preferred style for luis: feminine voice, warmer, friendlier, closer, "like family", less robotic/formal
+
 ### Audio / Transcription
 
 - Local Whisper stack: `faster-whisper` installed in Python user packages.
