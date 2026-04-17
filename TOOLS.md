@@ -49,3 +49,9 @@ Add whatever helps you do your job. This is your cheat sheet.
 
 - Telegram bot/account: TanqueBot (@lacajaambarBot)
 - Preferred Telegram target/chat id for luis: 1356520901
+
+### Audio / Transcription
+
+- Local Whisper stack: `faster-whisper` installed in Python user packages.
+- Local transcription helper: `python3 /data/.openclaw/workspace/scripts/whisper-transcribe.py <audio-file> --language es`
+- Bundled ffmpeg fallback comes from `imageio-ffmpeg`, so system ffmpeg is not required for the helper script.
