@@ -11,11 +11,13 @@ _Learn about the person you're helping. Update this as you go._
 - **Name:** Luis
 - **What to call them:** luis
 - **Timezone:** Europe/London
-- **Notes:** User asked to be called luis.
+- **Notes:** User asked to be called luis. Wants the assistant to be cordial and highly knowledgeable about technology, especially, while also being broadly capable.
 
 ## Context
 
-_(What do they care about? What projects are they working on? What annoys them? What makes them laugh? Build this over time.)_
+- Prefers a cordial assistant.
+- Values strong technology knowledge as a priority.
+- Has not set hard limits yet.
 
 ---
 
