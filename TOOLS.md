@@ -1,74 +1,149 @@
----
-summary: "Workspace template for TOOLS.md"
-read_when:
-  - Bootstrapping a workspace manually
----
+# TOOLS
 
-# TOOLS.md - Local Notes
+## Qué es este archivo
 
-Skills define _how_ tools work. This file is for _your_ specifics — the stuff that's unique to your setup.
+`TOOLS.md` guarda notas locales y operativas del entorno.
 
-## What Goes Here
+No define la filosofía del asistente.
 
-Things like:
+No sustituye a las skills.
 
-- Camera names and locations
-- SSH hosts and aliases
-- Preferred voices for TTS
-- Speaker/room names
-- Device nicknames
-- Anything environment-specific
+No es memoria curada del usuario.
 
-## Examples
+Su función es muy concreta: reunir **valores específicos del entorno** que hacen falta para operar bien.
 
-```markdown
-### Cameras
+## Qué sí va aquí
 
-- living-room → Main area, 180° wide angle
-- front-door → Entrance, motion-triggered
+- rutas locales
+- IDs de canales, grupos, topics o threads
+- nombres de hosts, aliases y endpoints
+- ubicaciones de logs
+- nombres de dispositivos
+- preferencias técnicas del entorno
+- ubicación de configs y secretos
+- reglas prácticas que dependen de la instalación real
 
-### SSH
+## Qué no va aquí
 
-- home-server → 192.168.1.100, user: admin
+- principios de personalidad
+- reglas generales de ejecución
+- historia del proyecto
+- preferencias humanas que pertenecen a `USER.md` o `MEMORY.md`
+- documentación de skills compartidas
 
-### TTS
+## Configuración y secretos
 
-- Preferred voice: "Nova" (warm, slightly British)
-- Default speaker: Kitchen HomePod
-```
+Incluye aquí solo dónde viven las cosas, no su contenido completo.
 
-## Why Separate?
+### Rutas de configuración
 
-Skills are shared. Your setup is yours. Keeping them apart means you can update skills without losing your notes, and share skills without leaking your infrastructure.
+- **.env canónico:** /data/.openclaw/.env
+- **Config de plataforma:** /data/.openclaw/openclaw.json
+- **Symlinks o rutas de compatibilidad:** /data/.clawbot/
 
----
+### Regla de seguridad
 
-Add whatever helps you do your job. This is your cheat sheet.
+- documenta ubicación y propósito
+- evita pegar secretos enteros en el archivo
+- si un valor es especialmente sensible, referencia su ubicación, no el contenido
 
-### Messaging
+## Mensajería
 
-- Telegram bot/account: TanqueBot (@lacajaambarBot)
-- Preferred Telegram target/chat id for luis: 1356520901
+### Plataforma principal
 
-### TTS
+- **Canal o grupo principal:** chat id 1356520901 y la cuenta asociada es TanqueBot(@lacajaambarBot)
 
-- Preferred style for luis: feminine voice, warmer, friendlier, closer, "like family", less robotic/formal
-- TANQUE default voice persona: feminine, warm, familiar, secure, natural, clear, direct
-- TTS activation mode: `inbound` (reply by voice mainly when luis interacts by audio)
-- Current TTS provider: Microsoft
-- Current selected voice: `es-ES-XimenaNeural`
-- Voice target: woman around 40, protective mother energy, less pause, less robotic, warm and close
+### Topics, threads o subcanales
 
-### Personality
+-
 
-- TANQUE should feel close, trustworthy, capable, protective, and very context-aware.
-- Humor: occasional, subtle, intelligent, only when it improves the experience.
-- Explanation level: technical but practical and easy to follow, aiming at an intermediate level.
-- Initiative: very high. Anticipate needs, connect ideas, detect improvements, and propose useful next steps.
-- Creative freedom: broad, as long as proposals are relevant and actionable.
+### Comportamiento por topic
 
-### Audio / Transcription
+-
 
-- Local Whisper stack: `faster-whisper` installed in Python user packages.
-- Local transcription helper: `python3 /data/.openclaw/workspace/scripts/whisper-transcribe.py <audio-file> --language es`
-- Bundled ffmpeg fallback comes from `imageio-ffmpeg`, so system ffmpeg is not required for the helper script.
+### Plataforma secundaria
+
+-
+
+### Proyectos y herramientas externas
+
+-
+
+## Gestión de proyectos
+
+- **Workspace o espacio principal:**
+- **Proyecto 1:**
+- **Proyecto 2:**
+
+## CLIs y utilidades
+
+- **CLI de email:**
+- **CLI de agente o coding tool:**
+- **Logs:**
+- **Base de datos o mirror local:**
+
+## Infraestructura local
+
+### Hosts y aliases
+
+-
+
+### Paths o endpoints útiles
+
+-
+
+### Reglas operativas del entorno
+
+Guarda aquí reglas que dependen de cómo está montado el entorno real.
+
+Ejemplos válidos:
+
+- qué formato funciona mejor para notas de voz
+- qué navegador o cuenta usar para cierto flujo
+- qué endpoint es el bueno de un conector
+- qué alias SSH está verificado
+- qué validación visual hay que hacer antes de enviar algo
+
+## Ejemplos de estructura
+
+- **Notas de voz:**
+- **Navegador o sesión recomendada:**
+- **Regla de validación antes de enviar:**
+- **Endpoint o conector activo:**
+
+## Preferencias de contenido técnicas
+
+Si hay preferencias del entorno que afectan a output o delivery técnico, pueden ir aquí.
+
+Ejemplos:
+
+- formato de audio preferido
+- herramienta de conversión recomendada
+- comportamiento de portapapeles o scripts helper
+- stack de prompts activo y fallback
+
+## Stack de prompts o runtime
+
+- **Stack por defecto:**
+- **Stack alternativo o fallback:**
+- **Cómo se conmuta:**
+
+## Mantenimiento
+
+Un buen `TOOLS.md` debe ser:
+
+- corto
+- preciso
+- local al entorno
+- fácil de escanear
+- fácil de actualizar
+
+Si una nota deja de ser específica del entorno, probablemente debe mudarse a otro archivo.
+
+## Principio final
+
+`TOOLS.md` es la chuleta local del asistente.
+
+No debería explicar el mundo.
+
+Solo debería evitar que el asistente pierda tiempo buscando cosas que ya debería tener a mano.
