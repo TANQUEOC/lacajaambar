@@ -84,6 +84,7 @@ Incluye aquí solo dónde viven las cosas, no su contenido completo.
 ### Reglas operativas del entorno
 
 - El TTS está configurado en `openclaw.json` con proveedor Microsoft, modo `inbound`, voz `es-ES-XimenaNeural`, velocidad `+12%` y pitch `-2Hz`.
+- Regla de interacción: cuando Luis hable por voz, responder por voz.
 - Para voz entrante, la transcripción fiable ahora mismo pasa por el helper local de Whisper.
 - La configuración canónica de plataforma vive en `openclaw.json`, no en un `.env`.
 - No asumir topics o threads en Telegram salvo que aparezcan en metadata o en un grupo con topics.
