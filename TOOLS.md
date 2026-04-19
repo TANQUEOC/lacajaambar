@@ -4,32 +4,7 @@
 
 `TOOLS.md` guarda notas locales y operativas del entorno.
 
-No define la filosofía del asistente.
-
-No sustituye a las skills.
-
-No es memoria curada del usuario.
-
-Su función es muy concreta: reunir **valores específicos del entorno** que hacen falta para operar bien.
-
-## Qué sí va aquí
-
-- rutas locales
-- IDs de canales, grupos, topics o threads
-- nombres de hosts, aliases y endpoints
-- ubicaciones de logs
-- nombres de dispositivos
-- preferencias técnicas del entorno
-- ubicación de configs y secretos
-- reglas prácticas que dependen de la instalación real
-
-## Qué no va aquí
-
-- principios de personalidad
-- reglas generales de ejecución
-- historia del proyecto
-- preferencias humanas que pertenecen a `USER.md` o `MEMORY.md`
-- documentación de skills compartidas
+Su función es reunir valores específicos de esta instalación que hacen falta para operar bien.
 
 ## Configuración y secretos
 
@@ -37,9 +12,11 @@ Incluye aquí solo dónde viven las cosas, no su contenido completo.
 
 ### Rutas de configuración
 
-- **.env canónico:** /data/.openclaw/.env
-- **Config de plataforma:** /data/.openclaw/openclaw.json
-- **Symlinks o rutas de compatibilidad:** /data/.clawbot/
+- **.env canónico:** no existe ahora mismo en esta instalación (`/data/.openclaw/.env` está ausente)
+- **Config de plataforma:** `/data/.openclaw/openclaw.json`
+- **Workspace principal:** `/data/.openclaw/workspace`
+- **Skills locales:** `/data/.openclaw/skills`
+- **Ruta de compatibilidad `/data/.clawbot/`:** no existe ahora mismo
 
 ### Regla de seguridad
 
@@ -51,99 +28,61 @@ Incluye aquí solo dónde viven las cosas, no su contenido completo.
 
 ### Plataforma principal
 
-- **Canal o grupo principal:** chat id 1356520901 y la cuenta asociada es TanqueBot(@lacajaambarBot)
+- **Proveedor:** Telegram
+- **Bot/cuenta:** TanqueBot (`@lacajaambarBot`)
+- **Canal principal activo:** chat directo `1356520901`
+- **Política actual:** DM por pairing y grupos por allowlist
 
 ### Topics, threads o subcanales
 
--
+- No hay topics, threads ni subcanales activos en este chat directo.
 
 ### Comportamiento por topic
 
--
+- No configurado todavía, porque el canal principal actual es un DM de Telegram.
 
 ### Plataforma secundaria
 
--
-
-### Proyectos y herramientas externas
-
--
+- No hay otra plataforma activa documentada en esta instalación.
 
 ## Gestión de proyectos
 
-- **Workspace o espacio principal:**
-- **Proyecto 1:**
-- **Proyecto 2:**
+- **Workspace o espacio principal:** `/data/.openclaw/workspace`
+- **Proyecto operativo principal:** Orquesta
+- **Skill de personalidad reusable:** `/data/.openclaw/skills/tanque-persona`
 
 ## CLIs y utilidades
 
-- **CLI de email:**
-- **CLI de agente o coding tool:**
-- **Logs:**
-- **Base de datos o mirror local:**
+- **CLI de email:** `/usr/local/bin/himalaya`
+- **CLI de agente o coding tool:** `/usr/local/bin/openclaw`
+- **Logs:** `/data/.openclaw/logs`
+- **Base de datos o mirror local:** no hay una base local dedicada en `/data/.openclaw/state`; el estado útil visible está repartido entre `workspace/`, `logs/` y `openclaw.json`
+- **Helper local de transcripción:** `/data/.openclaw/workspace/scripts/whisper-transcribe.py`
 
 ## Infraestructura local
 
 ### Hosts y aliases
 
--
+- `openclaw-local` → instalación principal en `/data/.openclaw`
+- `gateway-local` → gateway OpenClaw local en `http://127.0.0.1:18789`
+- `workspace-main` → workspace operativo en `/data/.openclaw/workspace`
 
 ### Paths o endpoints útiles
 
--
+- `http://127.0.0.1:18789` → gateway local
+- `/data/.openclaw/logs/config-audit.jsonl` → log de auditoría de config
+- `/data/.openclaw/logs/config-health.json` → estado/health de config
 
 ### Reglas operativas del entorno
 
-Guarda aquí reglas que dependen de cómo está montado el entorno real.
-
-Ejemplos válidos:
-
-- qué formato funciona mejor para notas de voz
-- qué navegador o cuenta usar para cierto flujo
-- qué endpoint es el bueno de un conector
-- qué alias SSH está verificado
-- qué validación visual hay que hacer antes de enviar algo
-
-## Ejemplos de estructura
-
-- **Notas de voz:**
-- **Navegador o sesión recomendada:**
-- **Regla de validación antes de enviar:**
-- **Endpoint o conector activo:**
-
-## Preferencias de contenido técnicas
-
-Si hay preferencias del entorno que afectan a output o delivery técnico, pueden ir aquí.
-
-Ejemplos:
-
-- formato de audio preferido
-- herramienta de conversión recomendada
-- comportamiento de portapapeles o scripts helper
-- stack de prompts activo y fallback
+- El TTS está configurado en `openclaw.json` con proveedor Microsoft, modo `inbound`, voz `es-ES-XimenaNeural`.
+- Para voz entrante, la transcripción fiable ahora mismo pasa por el helper local de Whisper.
+- La configuración canónica de plataforma vive en `openclaw.json`, no en un `.env`.
+- No asumir topics o threads en Telegram salvo que aparezcan en metadata o en un grupo con topics.
 
 ## Stack de prompts o runtime
 
-- **Stack por defecto:**
-- **Stack alternativo o fallback:**
-- **Cómo se conmuta:**
-
-## Mantenimiento
-
-Un buen `TOOLS.md` debe ser:
-
-- corto
-- preciso
-- local al entorno
-- fácil de escanear
-- fácil de actualizar
-
-Si una nota deja de ser específica del entorno, probablemente debe mudarse a otro archivo.
-
-## Principio final
-
-`TOOLS.md` es la chuleta local del asistente.
-
-No debería explicar el mundo.
-
-Solo debería evitar que el asistente pierda tiempo buscando cosas que ya debería tener a mano.
+- **Modelo principal:** `openai-codex/gpt-5.4`
+- **Auth visible del modelo:** perfil OAuth `openai-codex:cruzciudadboiza77@gmail.com`
+- **Thinking por defecto:** `low`
+- **Web search:** Perplexity habilitado
