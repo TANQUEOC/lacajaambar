@@ -70,6 +70,8 @@ Incluye aquí solo dónde viven las cosas, no su contenido completo.
 - **Base de datos o mirror local:** no hay una base local dedicada en `/data/.openclaw/state`; el estado útil visible está repartido entre `workspace/`, `logs/` y `openclaw.json`
 - **Helper local de transcripción:** `/data/.openclaw/workspace/scripts/whisper-transcribe.py`
 - **Artefactos temporales útiles:** `/data/.openclaw/workspace/tmp`
+- **Script de backup diario:** `/data/.openclaw/workspace/scripts/daily-backup.sh`
+- **Carpeta de backups:** `/data/.openclaw/backups`
 
 ## Infraestructura local
 
@@ -96,6 +98,7 @@ Incluye aquí solo dónde viven las cosas, no su contenido completo.
 - Para mensajería externa sensible, confirmar antes de enviar emails o publicaciones.
 - El gateway local esperado escucha en `127.0.0.1:18789`.
 - Google Drive quedó operativo vía `rclone` con remote `tanque-drive`; la validación práctica ya creó una carpeta de prueba en Drive.
+- Hay una tarea recurrente diaria a las 02:00, zona `Europe/Madrid`, para ejecutar el backup y anunciar el informe por Telegram al chat `1356520901`.
 
 ## Stack de prompts o runtime
 
