@@ -43,7 +43,7 @@ Incluye aquí solo dónde viven las cosas, no su contenido completo.
 
 ### Plataforma secundaria
 
-- No hay otra plataforma activa documentada en esta instalación.
+- Google Drive operativo vía `rclone` con remote `tanque-drive`.
 
 ## Gestión de proyectos
 
@@ -59,6 +59,9 @@ Incluye aquí solo dónde viven las cosas, no su contenido completo.
 - **Config del CLI de email:** `/data/.config/himalaya/config.toml`
 - **Cuenta de email configurada:** `tanqueoc@gmail.com` (display name `TanqueOC`)
 - **CLI de agente o coding tool:** `/usr/local/bin/openclaw`
+- **CLI de Google Drive:** `/data/linuxbrew/.linuxbrew/bin/rclone`
+- **Config de Google Drive / rclone:** `/data/.config/rclone/rclone.conf`
+- **Remote de Drive configurada:** `tanque-drive`
 - **Python principal:** `/usr/bin/python3`
 - **Node principal:** `/usr/local/bin/node`
 - **Git principal:** `/usr/bin/git`
@@ -75,6 +78,7 @@ Incluye aquí solo dónde viven las cosas, no su contenido completo.
 - `openclaw-local` → instalación principal en `/data/.openclaw`
 - `gateway-local` → gateway OpenClaw local en `http://127.0.0.1:18789`
 - `workspace-main` → workspace operativo en `/data/.openclaw/workspace`
+- `drive-remote` → Google Drive remoto accesible como `tanque-drive:` vía `rclone`
 
 ### Paths o endpoints útiles
 
@@ -91,6 +95,7 @@ Incluye aquí solo dónde viven las cosas, no su contenido completo.
 - No asumir topics o threads en Telegram salvo que aparezcan en metadata o en un grupo con topics.
 - Para mensajería externa sensible, confirmar antes de enviar emails o publicaciones.
 - El gateway local esperado escucha en `127.0.0.1:18789`.
+- Google Drive quedó operativo vía `rclone` con remote `tanque-drive`; la validación práctica ya creó una carpeta de prueba en Drive.
 
 ## Stack de prompts o runtime
 
