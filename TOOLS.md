@@ -57,7 +57,7 @@ Incluye aquí solo dónde viven las cosas, no su contenido completo.
 
 - **CLI de email:** `/usr/local/bin/himalaya`
 - **Config del CLI de email:** `/data/.config/himalaya/config.toml`
-- **Cuenta de email configurada:** `tanqueoc@gmail.com` (display name `openclaw`)
+- **Cuenta de email configurada:** `tanqueoc@gmail.com` (display name `TanqueOC`)
 - **CLI de agente o coding tool:** `/usr/local/bin/openclaw`
 - **Python principal:** `/usr/bin/python3`
 - **Node principal:** `/usr/local/bin/node`
