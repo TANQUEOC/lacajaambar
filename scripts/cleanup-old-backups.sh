@@ -2,7 +2,7 @@
 set -euo pipefail
 
 BACKUP_ROOT="/data/.openclaw/backups"
-RETENTION_DAYS=3
+RETENTION_DAYS=2
 
 mkdir -p "$BACKUP_ROOT"
 
@@ -15,5 +15,5 @@ done < <(find "$BACKUP_ROOT" -mindepth 1 -maxdepth 1 -type d -name 'BCK-*' -mtim
 
 echo "Cleanup completed: $(date -Is)"
 echo "Backup root: $BACKUP_ROOT"
-echo "Retention days: $RETENTION_DAYS"
+echo "Retention window: today plus $RETENTION_DAYS previous days"
 echo "Deleted folders: $DELETED"

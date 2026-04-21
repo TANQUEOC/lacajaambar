@@ -100,7 +100,7 @@ Incluye aquí solo dónde viven las cosas, no su contenido completo.
 - El gateway local esperado escucha en `127.0.0.1:18789`.
 - Google Drive quedó operativo vía `rclone` con remote `tanque-drive`; la validación práctica ya creó una carpeta de prueba en Drive.
 - Hay una tarea recurrente diaria a las 02:00, zona `Europe/Madrid`, para ejecutar el backup y anunciar el informe por Telegram al chat `1356520901`.
-- Hay una tarea recurrente diaria a las 02:30, zona `Europe/Madrid`, para borrar carpetas `BCK-*` con más de 3 días y anunciar el informe por Telegram al chat `1356520901`.
+- Hay una tarea recurrente diaria a las 02:30, zona `Europe/Madrid`, para borrar carpetas `BCK-*` y conservar solo la ventana de hoy más los 2 días anteriores; anuncia el informe por Telegram al chat `1356520901`.
 
 ## Stack de prompts o runtime
 
