@@ -56,7 +56,8 @@ Incluye aquí solo dónde viven las cosas, no su contenido completo.
 ## CLIs y utilidades
 
 - **CLI de email:** `/usr/local/bin/himalaya`
-- **Config del CLI de email:** `~/.config/himalaya/config.toml`
+- **Config del CLI de email:** `/data/.config/himalaya/config.toml`
+- **Cuenta de email configurada:** `tanqueoc@gmail.com` (display name `openclaw`)
 - **CLI de agente o coding tool:** `/usr/local/bin/openclaw`
 - **Python principal:** `/usr/bin/python3`
 - **Node principal:** `/usr/local/bin/node`
