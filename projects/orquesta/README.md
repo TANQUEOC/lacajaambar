@@ -13,7 +13,7 @@ Construir empresas ligeras, muy automatizadas y dirigidas por agentes IA con Lui
 Documentación, casos de uso, arquitectura y activos técnicos para convertir Orquesta en un sistema replicable.
 
 ## Stack
-- GitHub repo: pendiente
+- GitHub repo: `orquesta`
 - Skills específicas: `projects/orquesta/skills/`
 - Scripts específicos: `projects/orquesta/scripts/`
 - Documentación: `projects/orquesta/docs/`

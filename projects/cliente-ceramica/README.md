@@ -13,7 +13,7 @@ Resolver marketing digital, catálogo comercial y evolución a e-commerce o vent
 Sistema comercial y digital claro, con captación, catálogo, seguimiento y automatización.
 
 ## Stack
-- GitHub repo: pendiente, decidir si privado por cliente
+- GitHub repo: `cliente-ceramica`
 - Skills específicas: `projects/cliente-ceramica/skills/`
 - Scripts específicos: `projects/cliente-ceramica/scripts/`
 - Entregables: `projects/cliente-ceramica/deliverables/`

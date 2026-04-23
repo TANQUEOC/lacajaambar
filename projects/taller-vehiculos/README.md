@@ -13,7 +13,7 @@ Montar una solución de voz, clasificación de llamadas y agenda automática par
 Sistema capaz de atender llamadas, extraer datos, proponer citas y dejar trazabilidad operativa.
 
 ## Stack
-- GitHub repo: pendiente, decidir si privado por cliente
+- GitHub repo: `taller-vehiculos`
 - Skills específicas: `projects/taller-vehiculos/skills/`
 - Scripts específicos: `projects/taller-vehiculos/scripts/`
 - Entregables: `projects/taller-vehiculos/deliverables/`

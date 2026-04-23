@@ -18,7 +18,7 @@ Objetivo:
 ```text
 projects/
   _template/
-  TanqueGeneral/
+  tanque-general/
   orquesta/
   cliente-ceramica/
   taller-vehiculos/
@@ -61,7 +61,7 @@ Regla operativa:
 Cada proyecto TECH puede tener su propio repositorio.
 
 Ejemplo recomendado:
-- `projects/TanqueGeneral` → repo GitHub propio
+- `projects/tanque-general` → repo GitHub propio
 - `projects/orquesta` → repo GitHub propio cuando madure
 - `projects/cliente-ceramica` → repo separado si el cliente lo requiere
 - `projects/taller-vehiculos` → repo separado si el cliente lo requiere
@@ -73,7 +73,7 @@ Las skills muy específicas deben vivir dentro del proyecto correspondiente, en 
 
 ## Proyectos actuales
 
-- `TanqueGeneral`: repo general de software y base técnica conectada a GitHub.
+- `tanque-general`: repo general de software y base técnica conectada a GitHub.
 - `orquesta`: núcleo conceptual y operativo del sistema Orquesta.
 - `cliente-ceramica`: vertical comercial/digital para empresa cerámica.
 - `taller-vehiculos`: vertical de voz, agenda y atención para taller.
