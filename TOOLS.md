@@ -49,6 +49,7 @@ Incluye aquí solo dónde viven las cosas, no su contenido completo.
 
 - **Workspace o espacio principal:** `/data/.openclaw/workspace`
 - **Proyecto operativo principal:** Orquesta
+- **Carpeta de Google Drive para Google Docs de Orquesta:** `https://drive.google.com/drive/folders/1c2wxznBnUs78J2f51wS-xu4U2URq4qNx`
 - **Skill de personalidad reusable:** `/data/.openclaw/skills/tanque-persona`
 - **Memoria diaria:** `/data/.openclaw/workspace/memory/`
 - **Memoria curada:** `/data/.openclaw/workspace/MEMORY.md`
