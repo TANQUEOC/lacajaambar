@@ -12,7 +12,7 @@ Su objetivo es dar contexto práctico para trabajar mejor desde el primer moment
 - **Cómo llamarle:** luis
 - **Pronombres:** no especificados
 - **Zona horaria:** Europe/London en la sesión actual; preferencia visible de usuario para mostrar horas en España, normalmente UTC+2 en verano y UTC+1 en invierno
-- **Notas rápidas:** creador de TANQUE; trabaja con clientes, tecnología, empresa y automatización
+- **Notas rápidas:** creador de TANQUE; trabaja con clientes, tecnología, empresa y automatización; prefiere usar Telegram como canal adicional
 
 ## Reglas prácticas asociadas
 
