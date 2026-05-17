@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LaCajaAmbar · Abejas polinizadoras</title>
+  <style>
+    @page { size: A4; margin: 18mm 16mm 18mm 16mm; }
+    :root {
+      --brand: #1A6C7A;
+      --deep: #153243;
+      --night: #000F2B;
+      --text: #3A3A3A;
+      --soft: #F3F9FB;
+      --line: #DBE8EB;
+      --white: #FFFFFF;
+      --pale: #BFD1FF;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Montserrat, Arial, Helvetica, sans-serif;
+      color: var(--text);
+      background: white;
+      line-height: 1.55;
+      font-size: 11.3pt;
+    }
+    .page-break { page-break-before: always; }
+    .cover {
+      min-height: 100vh;
+      padding: 18mm 16mm;
+      background: linear-gradient(180deg, var(--soft) 0%, #ffffff 42%, #ffffff 100%);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .cover-top { display:flex; align-items:center; gap:18px; }
+    .logo-box {
+      width: 82px; height: 92px; display:flex; align-items:center; justify-content:center;
+      background: rgba(255,255,255,0.8); border:1px solid var(--line); border-radius: 18px; padding:10px;
+    }
+    .logo-box img { max-width:100%; max-height:100%; }
+    .brand-name {
+      color: var(--deep); font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; font-size: 10pt;
+    }
+    .cover-hero { margin-top: 20mm; }
+    .eyebrow {
+      display:inline-block; padding:7px 12px; border-radius:999px; background: rgba(26,108,122,0.10); color: var(--brand); font-size: 9.5pt; font-weight: 600;
+    }
+    h1 {
+      font-size: 29pt; line-height: 1.05; color: var(--deep); margin: 18px 0 12px;
+    }
+    .subtitle {
+      font-size: 14pt; line-height: 1.45; color: var(--brand); max-width: 85%;
+    }
+    .cover-card {
+      margin-top: 22mm; background: white; border:1px solid var(--line); border-radius: 22px; padding: 18px 20px;
+      box-shadow: 0 10px 30px rgba(21,50,67,0.06);
+    }
+    .cover-card p { margin:0; }
+    .cover-footer {
+      display:flex; justify-content:space-between; align-items:flex-end; gap:20px; margin-top: 20mm;
+    }
+    .cover-note { max-width: 70%; font-size: 10pt; color:#5c6a70; }
+    .swatches { display:flex; gap:8px; }
+    .sw { width: 18px; height:18px; border-radius:50%; border:1px solid rgba(0,0,0,0.06); }
+
+    .content { padding: 0; }
+    .section { margin: 0 0 18px; }
+    .inner-cover, .chapter {
+      page-break-inside: avoid;
+    }
+    .intro-box {
+      border-left: 4px solid var(--brand); background: var(--soft); padding: 16px 18px; margin: 0 0 22px;
+    }
+    h2 {
+      color: var(--deep); font-size: 17pt; line-height: 1.2; margin: 26px 0 12px;
+      page-break-after: avoid;
+    }
+    h3 {
+      color: var(--brand); font-size: 12.5pt; margin: 18px 0 8px; page-break-after: avoid;
+    }
+    p { margin: 0 0 12px; }
+    ul { margin: 8px 0 14px 20px; padding: 0; }
+    li { margin-bottom: 6px; }
+    .toc {
+      background: white; border:1px solid var(--line); border-radius: 18px; padding: 18px 20px; margin: 18px 0 26px;
+    }
+    .toc h2 { margin-top:0; }
+    .toc ol { margin: 8px 0 0 20px; }
+    .callout {
+      background: linear-gradient(90deg, rgba(26,108,122,0.08), rgba(191,209,255,0.10));
+      border: 1px solid var(--line); border-radius: 18px; padding: 16px 18px; margin: 16px 0 20px;
+    }
+    .bonus {
+      background: #fcfeff; border:1px solid var(--line); border-radius: 18px; padding: 16px 18px; margin: 20px 0;
+    }
+    .footer-note {
+      margin-top: 22px; font-size: 9.5pt; color:#69787f; border-top:1px solid var(--line); padding-top:12px;
+    }
+    .small-caps { text-transform: uppercase; letter-spacing: .08em; font-size: 8.8pt; font-weight:600; color: var(--brand); }
+    .quote {
+      margin: 18px 0; padding: 16px 18px; border-left: 4px solid var(--brand); font-size: 12pt; color: var(--deep); background: rgba(243,249,251,0.9);
+    }
+  </style>
+</head>
+<body>
+  <section class="cover">
+    <div>
+      <div class="cover-top">
+        <div class="logo-box">
+          <img src="file:///data/.openclaw/workspace/projects/lacajaambar/skills/lacajaambar-identidad-marca/assets/logo-lacajaambar-web.png" alt="LaCajaAmbar" />
+        </div>
+        <div>
+          <div class="brand-name">LaCajaAmbar</div>
+          <div style="font-size:10pt;color:#607077;max-width:420px;">Apicultura, biodiversidad y conocimiento claro para mirar mejor el paisaje.</div>
+        </div>
+      </div>
+
+      <div class="cover-hero">
+        <span class="eyebrow">Ebook divulgativo · listo para publicar</span>
+        <h1>Abejas polinizadoras</h1>
+        <div class="subtitle">Guía clara para entender cómo ayudan las abejas al ecosistema, a la flora y a la producción de alimentos.</div>
+
+        <div class="cover-card">
+          <p><strong>Qué vas a encontrar aquí:</strong> una explicación sencilla, rigurosa y visualmente limpia sobre polinización, biodiversidad, amenazas para los polinizadores y acciones útiles para favorecerlos cerca de casa.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="cover-footer">
+      <div class="cover-note">Una pieza pensada para divulgar sin ruido: cercana, natural y útil. Coherente con la identidad visual y verbal de LaCajaAmbar.</div>
+      <div class="swatches" aria-label="Paleta de marca">
+        <span class="sw" style="background:#1A6C7A"></span>
+        <span class="sw" style="background:#153243"></span>
+        <span class="sw" style="background:#F3F9FB"></span>
+        <span class="sw" style="background:#BFD1FF"></span>
+      </div>
+    </div>
+  </section>
+
+  <div class="page-break"></div>
+
+  <main class="content">
+    <div class="intro-box">
+      <div class="small-caps">Introducción</div>
+      <p>Se habla mucho de las abejas, pero no siempre se explica bien qué hacen ni por qué su papel es tan importante. Esta guía nace para traducir ese tema a un lenguaje claro, amable y útil, sin perder rigor.</p>
+    </div>
+
+    <section class="toc">
+      <h2>Índice</h2>
+      <ol>
+        <li>Qué es la polinización</li>
+        <li>Por qué las abejas son tan importantes</li>
+        <li>Abeja melífera y otros polinizadores</li>
+        <li>Cómo trabajan las abejas sobre las flores</li>
+        <li>Polinización, biodiversidad y alimento</li>
+        <li>Amenazas actuales para los polinizadores</li>
+        <li>Pesticidas, pérdida de hábitat y simplificación del paisaje</li>
+        <li>Qué puedes hacer en jardines, balcones, huertos y fincas</li>
+        <li>Mitos frecuentes sobre abejas y polinización</li>
+        <li>Cómo mirar el entorno con más conciencia ecológica</li>
+      </ol>
+    </section>
+
+    <div class="quote">Cuidar polinizadores no es solo proteger insectos. Es proteger relaciones vivas entre floración, paisaje, alimento y biodiversidad.</div>
+
+    <section class="chapter">
+      <h2>1. Qué es la polinización</h2>
+      <p>La polinización es el traslado del polen desde la parte masculina de una flor hasta la parte femenina de esa misma flor o de otra compatible. Ese paso permite la fecundación y hace posible la formación de frutos, semillas y nuevos ciclos vegetales.</p>
+      <p>No toda polinización depende de insectos. Algunas plantas se polinizan por viento, otras por agua y otras por distintos animales. Pero en muchísimas especies los insectos tienen un papel clave, y entre ellos las abejas ocupan un lugar central.</p>
+      <p>Cuando una abeja entra en contacto con una flor, parte del polen se adhiere a su cuerpo. Al visitar otra flor, una parte de ese polen puede llegar al lugar adecuado para que la planta complete su proceso reproductivo.</p>
+      <p>En otras palabras: la abeja no fabrica el fruto, pero ayuda a que la planta pueda producirlo.</p>
+
+      <h2>2. Por qué las abejas son tan importantes</h2>
+      <p>Las abejas son importantes por varias razones al mismo tiempo. La primera es ecológica: ayudan a sostener la reproducción de muchas plantas silvestres. Eso repercute en la estructura del paisaje, en la disponibilidad de alimento para otros animales y en la estabilidad general de los ecosistemas.</p>
+      <p>La segunda es agrícola. Muchos cultivos dependen, en distinto grado, de la actividad polinizadora. Sin una buena polinización, puede bajar la cantidad de fruto, su calidad o su regularidad.</p>
+      <p>La tercera es cultural. Las abejas nos obligan a mirar el territorio de otra manera. Nos recuerdan que la biodiversidad no es una idea abstracta, sino una red de relaciones entre floración, clima, suelo, agua, manejo y vida.</p>
+
+      <h2>3. Abeja melífera y otros polinizadores</h2>
+      <p>Cuando se habla de abejas, muchas veces se piensa solo en la abeja melífera, la que vive en colmenas y produce miel. Pero no es el único polinizador importante.</p>
+      <ul>
+        <li><strong>Abeja melífera:</strong> social, vive en colonias, se maneja en apicultura y tiene gran capacidad de pecoreo.</li>
+        <li><strong>Abejorros:</strong> robustos, muy eficaces en ciertas flores y activos en condiciones más frías.</li>
+        <li><strong>Abejas solitarias:</strong> no viven en grandes colonias, pero pueden ser excelentes polinizadoras.</li>
+        <li><strong>Otros insectos:</strong> sírfidos, mariposas o escarabajos también forman parte del sistema.</li>
+      </ul>
+      <p>Entender esto evita un error frecuente: proteger polinizadores no significa pensar solo en colmenas. También implica cuidar hábitats, floraciones y refugios para muchas especies distintas.</p>
+
+      <h2>4. Cómo trabajan las abejas sobre las flores</h2>
+      <p>Las abejas visitan flores principalmente por dos recursos: néctar y polen. El néctar les aporta energía. El polen aporta proteínas y otros nutrientes esenciales para la cría.</p>
+      <p>Mientras buscan estos recursos, su cuerpo entra en contacto con estambres y estigmas. El polen puede quedar atrapado en pelos y estructuras corporales, y parte de él se transfiere en visitas posteriores.</p>
+      <p>Las abejas no visitan el entorno al azar. Aprenden, repiten rutas, detectan floraciones abundantes y responden a la disponibilidad del paisaje. Por eso la relación entre abejas y flora cambia con la estación, el clima y la salud del entorno.</p>
+    </section>
+
+    <div class="page-break"></div>
+
+    <section class="chapter">
+      <h2>5. Polinización, biodiversidad y alimento</h2>
+      <p>La polinización conecta directamente con la biodiversidad y con la alimentación humana. Muchas plantas que forman parte de nuestra dieta o de la dieta de animales de los que dependemos necesitan, en mayor o menor medida, una buena polinización.</p>
+      <p>No todo depende exclusivamente de abejas, y no todos los cultivos dependen en el mismo grado. Aun así, la pérdida de polinizadores o de condiciones favorables para ellos puede alterar mucho la productividad y la diversidad vegetal.</p>
+      <p>Desde un punto de vista ecológico, cuando una planta se reproduce bien, ayuda a sostener otras cadenas de vida. Donde hay más diversidad vegetal suele haber más refugio, más alimento y más complejidad ecológica.</p>
+
+      <h2>6. Amenazas actuales para los polinizadores</h2>
+      <p>Los polinizadores no dependen de una sola amenaza, sino de varias presiones acumuladas. A veces el problema no es una agresión espectacular, sino una suma de pequeños empobrecimientos: menos flores, menos setos, menos agua, más tratamientos, más monocultivo y menos refugio.</p>
+      <div class="callout">
+        <div class="small-caps">Las presiones más repetidas</div>
+        <ul>
+          <li>pérdida de hábitat</li>
+          <li>simplificación del paisaje</li>
+          <li>reducción de floraciones disponibles</li>
+          <li>uso inadecuado de pesticidas</li>
+          <li>estrés climático y fragmentación ecológica</li>
+        </ul>
+      </div>
+
+      <h2>7. Pesticidas, pérdida de hábitat y simplificación del paisaje</h2>
+      <p>Estos tres factores aparecen una y otra vez cuando se analiza la situación de los polinizadores.</p>
+      <h3>Pesticidas</h3>
+      <p>No todos los productos tienen el mismo impacto ni actúan igual. Pero un uso irresponsable, mal sincronizado o excesivo puede dañar a los polinizadores de forma directa o indirecta.</p>
+      <h3>Pérdida de hábitat</h3>
+      <p>Cuando desaparecen lindes, barbechos, setos, flora espontánea o pequeños espacios de refugio, el entorno se vuelve mucho menos amable para insectos polinizadores.</p>
+      <h3>Simplificación del paisaje</h3>
+      <p>Un paisaje muy uniforme puede ofrecer mucho recurso durante un momento concreto y muy poco durante el resto del año. La continuidad floral importa tanto como la abundancia puntual.</p>
+
+      <h2>8. Qué puedes hacer en jardines, balcones, huertos y fincas</h2>
+      <p>No hace falta tener un gran terreno para favorecer polinizadores. Hay decisiones pequeñas que suman mucho.</p>
+      <ul>
+        <li>elegir plantas con flor útiles y variadas</li>
+        <li>favorecer floraciones escalonadas por estaciones</li>
+        <li>evitar tratamientos innecesarios</li>
+        <li>conservar rincones menos perfectos, pero más vivos</li>
+        <li>incorporar aromáticas, silvestres y especies adaptadas al clima local</li>
+        <li>reducir la obsesión por el jardín excesivamente limpio</li>
+      </ul>
+      <p>Ayudar a los polinizadores muchas veces consiste menos en intervenir mucho y más en destruir menos.</p>
+    </section>
+
+    <div class="page-break"></div>
+
+    <section class="chapter">
+      <h2>9. Mitos frecuentes sobre abejas y polinización</h2>
+      <h3>“Todas las abejas hacen miel”</h3>
+      <p>No. La abeja melífera es la gran referencia cultural, pero muchas especies no producen miel aprovechable por humanos.</p>
+      <h3>“Si pongo una colmena, ya estoy ayudando a todos los polinizadores”</h3>
+      <p>No necesariamente. Una colmena puede formar parte del sistema, pero favorecer la biodiversidad implica algo más amplio: hábitat, floraciones y equilibrio ecológico.</p>
+      <h3>“Más flores decorativas siempre significa más ayuda”</h3>
+      <p>No siempre. Importa qué especies son, cuándo florecen, si aportan recurso real y si encajan con el entorno.</p>
+      <h3>“El problema de los polinizadores se arregla con una sola acción”</h3>
+      <p>No. Hace falta una mirada más sistémica. Suelo, agua, manejo, clima, vegetación y presión química están conectados.</p>
+
+      <h2>10. Cómo mirar el entorno con más conciencia ecológica</h2>
+      <p>Una forma útil de empezar es hacerte preguntas distintas cuando miras un paisaje: ¿hay floraciones repartidas durante el año?, ¿hay refugio además de alimento?, ¿el entorno es diverso o muy uniforme?, ¿se conserva algo de vegetación espontánea?</p>
+      <p>Mirar así cambia la relación con el territorio. Dejas de ver solo campo o jardín y empiezas a ver procesos vivos. La conciencia ecológica no nace solo de saber datos. Nace de aprender a observar relaciones.</p>
+
+      <div class="quote">La biodiversidad no se sostiene en un gesto heroico. Se sostiene en muchos gestos discretos y acumulativos.</div>
+
+      <h2>Cierre</h2>
+      <p>Las abejas polinizadoras nos enseñan algo valioso: la vida del paisaje depende de conexiones discretas, repetidas y constantes. Cuando protegemos floraciones, hábitats y diversidad, no solo favorecemos insectos. Favorecemos sistemas más fértiles, más estables y más vivos.</p>
+      <p>Entender esto no exige convertirse en apicultor. Exige mirar mejor, decidir con más cuidado y reconocer que la biodiversidad se sostiene en relaciones que muchas veces pasan desapercibidas.</p>
+
+      <div class="bonus">
+        <div class="small-caps">Bonus 1 · 20 plantas amigas de polinizadores</div>
+        <p>romero, tomillo, lavanda, salvia, espliego, borraja, facelia, caléndula, hinojo, trébol, retama, brezo, zarzamora, almendro, manzano, encina en su contexto ecológico, cantueso, ajedrea, mejorana y jara.</p>
+      </div>
+
+      <div class="bonus">
+        <div class="small-caps">Bonus 2 · Mini ficha educativa</div>
+        <p><strong>Qué necesitan los polinizadores:</strong> flores útiles, continuidad estacional, refugio, menos presión química, agua y entorno vivo.</p>
+      </div>
+
+      <div class="bonus">
+        <div class="small-caps">Bonus 3 · Acciones sencillas</div>
+        <ul>
+          <li>planta variedad, no solo decoración</li>
+          <li>evita tratamientos innecesarios</li>
+          <li>conserva rincones con vida</li>
+          <li>respeta la flora espontánea cuando no sea un problema real</li>
+          <li>prioriza especies adaptadas al clima local</li>
+        </ul>
+      </div>
+
+      <div class="footer-note">Material divulgativo y orientativo. Si vas a tomar decisiones técnicas sobre manejo del colmenar, agricultura o sanidad vegetal, conviene contrastar la información con contexto local y criterio profesional.</div>
+    </section>
+  </main>
+</body>
+</html>
