@@ -18,6 +18,7 @@ Mantener una identidad reconocible, cálida, natural y sobria en todo lo que se 
 - tono cercano, sereno y humano
 - estética limpia, orgánica y luminosa
 - coherencia entre lo visual y lo divulgativo
+- uso del logo corporativo actual de LaCajaAmbar como referencia principal de marca
 
 ## Cómo trabajar
 
@@ -36,6 +37,7 @@ Antes de generar una pieza, decide internamente estas capas:
 - Prioriza imágenes naturales, texturas reales, aire, luz y materia.
 - Si aparece venta, que sea integrada y elegante, no invasiva.
 - Si aparece divulgación, que sea bella pero rigurosa.
+- Usa como logo principal el asset `assets/logo-corporativo-lacajaambar.jpg` salvo que el usuario indique otra variante.
 
 ## Cuándo leer referencias
 

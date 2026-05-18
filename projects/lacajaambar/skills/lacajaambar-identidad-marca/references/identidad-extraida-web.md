@@ -15,18 +15,25 @@ LaCajaAmbar proyecta una identidad ligada a:
 No transmite lujo duro ni marca técnica.
 Tampoco transmite urgencia comercial agresiva.
 La sensación dominante es natural, limpia, tranquila y orgánica.
+El nuevo logo corporativo refuerza además una presencia más reconocible, más de sello de marca y menos de simple recurso web.
 
-## Logo detectado
-Logo público observado en la web:
+## Logo corporativo actual
+Logo corporativo principal fijado por el usuario:
+- asset canónico: `assets/logo-corporativo-lacajaambar.jpg`
+- origen: imagen aportada directamente por luis el 2026-05-17
+
+Logo secundario o histórico observado en la web:
 - URL original: `https://lacajaambar.com/wp-content/uploads/2020/04/cropped-cropped-logoLaCajaAmbar1-removebg-preview-160x178.png`
 - copia local en la skill: `assets/logo-lacajaambar-web.png`
 
 Uso recomendado:
-- respetar proporción vertical del símbolo
+- usar por defecto el logo corporativo principal `assets/logo-corporativo-lacajaambar.jpg`
+- respetar proporción y ángulo de la marca
 - dejar aire alrededor
 - no deformar
 - no aplicar sombras duras ni efectos chillones
 - preferir fondos claros o fondos oscuros muy limpios con contraste suficiente
+- reservar el logo observado en la web como variante secundaria mientras no se redefina la identidad
 
 ## Tipografías detectadas
 ### Primaria visible en tema
